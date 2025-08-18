@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 221f047a4d846b24fbde340c22d8b8d7, type: 3}
+  m_Name: V_007QingWeng
+  m_EditorClassIdentifier: 
+  wordName: "\u4EB2\u543B"
+  desc: "\u9020\u6210200%\u7CBE\u795E\u4F24\u5BB3\uFF0C\u5E76\u7ED9\u4E88\u60C5\u8FF75s"
+  mainIcon: {fileID: 2800000, guid: 5ac45b1d7ca8e2b44a987d3b356ea047, type: 3}
+  titleIcon: {fileID: 2800000, guid: 54c0e58d20347c841a4d6767292926be, type: 3}
+  relativeCard: 6e000000
+  relativeSkills: []

@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - sec3_1
+  - sec3_2
+  - sec3_3
+  - blackPanel
+  - character
+  - bullet
+  - portal
+  - wall
+  - situation
+  - Slider
+  - charaCard
+  - wordInf
+  - MainCanvas
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Character
+  - Water
+  - UI
+  - WordCollision
+  - Situation
+  - Servants
+  - wall
+  - Slider
+  - Ball
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Character
+    uniqueID: 626459831
+    locked: 0
+  - name: otherCanvas
+    uniqueID: 3250104159
+    locked: 0
+  - name: UICanvas
+    uniqueID: 1069493185
+    locked: 0

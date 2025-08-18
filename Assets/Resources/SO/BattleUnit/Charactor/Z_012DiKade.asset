@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cf2a644c5d71af4e8adae713d4a149c, type: 3}
+  m_Name: Z_012DiKade
+  m_EditorClassIdentifier: 
+  unitName: "\u72C4\u5361\u5FB7"
+  prefab: {fileID: 3837959891539934793, guid: d0248e34d6ea6f443ad4720c133cc09f, type: 3}
+  uiPrefab: {fileID: 0}
+  infoShort: "\u6BCF\u9020\u6210100\u4F24\u5BB3\uFF0C\u63D0\u534710\u653B\u51FB\uFF0C\u6700\u591A3\u6B21"
+  infoDetail: "\u6BCF\u9020\u6210100\u4F24\u5BB3\uFF0C\u63D0\u534710\u653B\u51FB\uFF0C\u6700\u591A3\u6B21"
+  pic: {fileID: 2800000, guid: e5e0434af1bcebc4b974ac72b57e0560, type: 3}
+  sprite: {fileID: 2800000, guid: e5e0434af1bcebc4b974ac72b57e0560, type: 3}
+  animatorController: {fileID: 9100000, guid: 3df8ddb197ce7df4982f7145a9133599, type: 2}
+  roleName: "\u94F6\u7FFC\u6740\u624B"
+  roleInfo: "\u6BCF\u9020\u6210100\u4F24\u5BB3\uFF0C\u63D0\u534710\u653B\u51FB\uFF0C\u6700\u591A3\u6B21"

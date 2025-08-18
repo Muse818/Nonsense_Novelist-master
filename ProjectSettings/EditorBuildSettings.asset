@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Login1.unity
+    guid: 2cd6d1deefe04a745bb814aa12c46f35
+  - enabled: 1
+    path: Assets/Scenes/Study.unity
+    guid: 4c8ce07adffefe242825a0b61d57d16c
+  - enabled: 1
+    path: Assets/Scenes/ShootCombat.unity
+    guid: 5df724c6a4a980a429013394dc46aec3
+  - enabled: 1
+    path: Assets/Scenes/BookShelf.unity
+    guid: 9fbc4a97d7457804eb455b25ed85e386
+  - enabled: 1
+    path: Assets/Scenes/Letters.unity
+    guid: 8ace63efce93cbb47a4d0bb6a33bb870
+  - enabled: 1
+    path: Assets/Scenes/Mail.unity
+    guid: eb2f207981f315945bf2b1db851fa112
+  m_configObjects: {}

@@ -1,0 +1,600 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f25c2228a83efb40892e2ded88dea04, type: 3}
+  m_Name: MonsterExcelData
+  m_EditorClassIdentifier: 
+  items:
+  - id: 
+    type: "\u653E\u5C04\u6027\u5FAE\u5C18"
+    name: 0
+    hp: 30
+    atk: 6
+    def: 20
+    psy: 6
+    san: 15
+    Mid: 110
+    word1: 
+    word2: 
+    word3: 
+    word4: 
+  - id: 
+    type: "\u653E\u5C04\u6027\u5FAE\u5C18"
+    name: 1
+    hp: 36
+    atk: 7
+    def: 24
+    psy: 7
+    san: 18
+    Mid: 110
+    word1: 
+    word2: 
+    word3: 
+    word4: 
+  - id: 
+    type: "\u653E\u5C04\u6027\u5FAE\u5C18"
+    name: 2
+    hp: 43
+    atk: 9
+    def: 29
+    psy: 9
+    san: 22
+    Mid: 110
+    word1: 
+    word2: 
+    word3: 
+    word4: 
+  - id: 
+    type: "\u653E\u5C04\u6027\u5FAE\u5C18"
+    name: 3
+    hp: 52
+    atk: 10
+    def: 35
+    psy: 10
+    san: 26
+    Mid: 110
+    word1: 
+    word2: 
+    word3: 
+    word4: 
+  - id: 
+    type: "\u653E\u5C04\u6027\u5FAE\u5C18"
+    name: 4
+    hp: 67
+    atk: 13
+    def: 45
+    psy: 13
+    san: 34
+    Mid: 110
+    word1: 
+    word2: 
+    word3: 
+    word4: 
+  - id: 
+    type: "\u653E\u5C04\u6027\u5FAE\u5C18"
+    name: 5
+    hp: 88
+    atk: 18
+    def: 58
+    psy: 18
+    san: 44
+    Mid: 110
+    word1: 
+    word2: 
+    word3: 
+    word4: 
+  - id: 
+    type: "\u653E\u5C04\u6027\u5FAE\u5C18"
+    name: 6
+    hp: 114
+    atk: 23
+    def: 76
+    psy: 23
+    san: 57
+    Mid: 110
+    word1: 
+    word2: 
+    word3: 
+    word4: 
+  - id: 
+    type: "\u653E\u5C04\u6027\u5FAE\u5C18"
+    name: 7
+    hp: 148
+    atk: 30
+    def: 99
+    psy: 30
+    san: 74
+    Mid: 110
+    word1: 
+    word2: 
+    word3: 
+    word4: 
+  - id: 
+    type: "\u653E\u5C04\u6027\u5FAE\u5C18"
+    name: 8
+    hp: 192
+    atk: 38
+    def: 128
+    psy: 38
+    san: 96
+    Mid: 110
+    word1: 
+    word2: 
+    word3: 
+    word4: 
+  - id: 
+    type: "\u8D5B\u535A\u75AF\u5B50"
+    name: 0
+    hp: 30
+    atk: 8
+    def: 16
+    psy: 6
+    san: 15
+    Mid: 111
+    word1: 
+    word2: 
+    word3: 
+    word4: 
+  - id: 
+    type: "\u8D5B\u535A\u75AF\u5B50"
+    name: 1
+    hp: 36
+    atk: 10
+    def: 19
+    psy: 7
+    san: 18
+    Mid: 111
+    word1: 
+    word2: 
+    word3: 
+    word4: 
+  - id: 
+    type: "\u8D5B\u535A\u75AF\u5B50"
+    name: 2
+    hp: 43
+    atk: 12
+    def: 23
+    psy: 9
+    san: 22
+    Mid: 111
+    word1: 
+    word2: 
+    word3: 
+    word4: 
+  - id: 
+    type: "\u8D5B\u535A\u75AF\u5B50"
+    name: 3
+    hp: 52
+    atk: 14
+    def: 28
+    psy: 10
+    san: 26
+    Mid: 111
+    word1: 
+    word2: 
+    word3: 
+    word4: 
+  - id: 
+    type: "\u8D5B\u535A\u75AF\u5B50"
+    name: 4
+    hp: 67
+    atk: 18
+    def: 36
+    psy: 13
+    san: 34
+    Mid: 111
+    word1: 
+    word2: 
+    word3: 
+    word4: 
+  - id: 
+    type: "\u8D5B\u535A\u75AF\u5B50"
+    name: 5
+    hp: 88
+    atk: 23
+    def: 47
+    psy: 18
+    san: 44
+    Mid: 111
+    word1: 
+    word2: 
+    word3: 
+    word4: 
+  - id: 
+    type: "\u8D5B\u535A\u75AF\u5B50"
+    name: 6
+    hp: 114
+    atk: 30
+    def: 61
+    psy: 23
+    san: 57
+    Mid: 111
+    word1: 
+    word2: 
+    word3: 
+    word4: 
+  - id: 
+    type: "\u8D5B\u535A\u75AF\u5B50"
+    name: 7
+    hp: 148
+    atk: 39
+    def: 79
+    psy: 30
+    san: 74
+    Mid: 111
+    word1: 
+    word2: 
+    word3: 
+    word4: 
+  - id: 
+    type: "\u8D5B\u535A\u75AF\u5B50"
+    name: 8
+    hp: 192
+    atk: 51
+    def: 103
+    psy: 38
+    san: 96
+    Mid: 111
+    word1: 
+    word2: 
+    word3: 
+    word4: 
+  - id: 
+    type: "\u8B66\u5BDF"
+    name: 0
+    hp: 21
+    atk: 8
+    def: 12
+    psy: 6
+    san: 15
+    Mid: 112
+    word1: 
+    word2: 
+    word3: 
+    word4: 
+  - id: 
+    type: "\u8B66\u5BDF"
+    name: 1
+    hp: 25
+    atk: 10
+    def: 14
+    psy: 7
+    san: 18
+    Mid: 112
+    word1: 
+    word2: 
+    word3: 
+    word4: 
+  - id: 
+    type: "\u8B66\u5BDF"
+    name: 2
+    hp: 30
+    atk: 12
+    def: 17
+    psy: 9
+    san: 22
+    Mid: 112
+    word1: 
+    word2: 
+    word3: 
+    word4: 
+  - id: 
+    type: "\u8B66\u5BDF"
+    name: 3
+    hp: 36
+    atk: 14
+    def: 21
+    psy: 10
+    san: 26
+    Mid: 112
+    word1: 
+    word2: 
+    word3: 
+    word4: 
+  - id: 
+    type: "\u8B66\u5BDF"
+    name: 4
+    hp: 47
+    atk: 18
+    def: 27
+    psy: 13
+    san: 34
+    Mid: 112
+    word1: 
+    word2: 
+    word3: 
+    word4: 
+  - id: 
+    type: "\u8B66\u5BDF"
+    name: 5
+    hp: 61
+    atk: 23
+    def: 35
+    psy: 18
+    san: 44
+    Mid: 112
+    word1: 
+    word2: 
+    word3: 
+    word4: 
+  - id: 
+    type: "\u8B66\u5BDF"
+    name: 6
+    hp: 80
+    atk: 30
+    def: 46
+    psy: 23
+    san: 57
+    Mid: 112
+    word1: 
+    word2: 
+    word3: 
+    word4: 
+  - id: 
+    type: "\u8B66\u5BDF"
+    name: 7
+    hp: 104
+    atk: 39
+    def: 59
+    psy: 30
+    san: 74
+    Mid: 112
+    word1: 
+    word2: 
+    word3: 
+    word4: 
+  - id: 
+    type: "\u8B66\u5BDF"
+    name: 8
+    hp: 135
+    atk: 51
+    def: 77
+    psy: 38
+    san: 96
+    Mid: 112
+    word1: 
+    word2: 
+    word3: 
+    word4: 
+  - id: 
+    type: "\u504F\u89C1"
+    name: 0
+    hp: 18
+    atk: 5
+    def: 9
+    psy: 9
+    san: 12
+    Mid: 113
+    word1: 
+    word2: 
+    word3: 
+    word4: 
+  - id: 
+    type: "\u504F\u89C1"
+    name: 1
+    hp: 22
+    atk: 6
+    def: 11
+    psy: 11
+    san: 14
+    Mid: 113
+    word1: 
+    word2: 
+    word3: 
+    word4: 
+  - id: 
+    type: "\u504F\u89C1"
+    name: 2
+    hp: 26
+    atk: 7
+    def: 13
+    psy: 13
+    san: 17
+    Mid: 113
+    word1: 
+    word2: 
+    word3: 
+    word4: 
+  - id: 
+    type: "\u504F\u89C1"
+    name: 3
+    hp: 31
+    atk: 9
+    def: 16
+    psy: 16
+    san: 21
+    Mid: 113
+    word1: 
+    word2: 
+    word3: 
+    word4: 
+  - id: 
+    type: "\u504F\u89C1"
+    name: 4
+    hp: 40
+    atk: 11
+    def: 20
+    psy: 20
+    san: 27
+    Mid: 113
+    word1: 
+    word2: 
+    word3: 
+    word4: 
+  - id: 
+    type: "\u504F\u89C1"
+    name: 5
+    hp: 53
+    atk: 15
+    def: 26
+    psy: 26
+    san: 35
+    Mid: 113
+    word1: 
+    word2: 
+    word3: 
+    word4: 
+  - id: 
+    type: "\u504F\u89C1"
+    name: 6
+    hp: 68
+    atk: 19
+    def: 34
+    psy: 34
+    san: 46
+    Mid: 113
+    word1: 
+    word2: 
+    word3: 
+    word4: 
+  - id: 
+    type: "\u504F\u89C1"
+    name: 7
+    hp: 89
+    atk: 25
+    def: 44
+    psy: 44
+    san: 59
+    Mid: 113
+    word1: 
+    word2: 
+    word3: 
+    word4: 
+  - id: 
+    type: "\u504F\u89C1"
+    name: 8
+    hp: 115
+    atk: 32
+    def: 58
+    psy: 58
+    san: 77
+    Mid: 113
+    word1: 
+    word2: 
+    word3: 
+    word4: 
+  - id: 
+    type: "\u8D4F\u91D1\u730E\u4EBA"
+    name: 0
+    hp: 27
+    atk: 9
+    def: 12
+    psy: 6
+    san: 12
+    Mid: 114
+    word1: 
+    word2: 
+    word3: 
+    word4: 
+  - id: 
+    type: "\u8D4F\u91D1\u730E\u4EBA"
+    name: 1
+    hp: 32
+    atk: 11
+    def: 14
+    psy: 7
+    san: 14
+    Mid: 114
+    word1: 
+    word2: 
+    word3: 
+    word4: 
+  - id: 
+    type: "\u8D4F\u91D1\u730E\u4EBA"
+    name: 2
+    hp: 39
+    atk: 13
+    def: 17
+    psy: 9
+    san: 17
+    Mid: 114
+    word1: 
+    word2: 
+    word3: 
+    word4: 
+  - id: 
+    type: "\u8D4F\u91D1\u730E\u4EBA"
+    name: 3
+    hp: 47
+    atk: 16
+    def: 21
+    psy: 10
+    san: 21
+    Mid: 114
+    word1: 
+    word2: 
+    word3: 
+    word4: 
+  - id: 
+    type: "\u8D4F\u91D1\u730E\u4EBA"
+    name: 4
+    hp: 61
+    atk: 20
+    def: 27
+    psy: 13
+    san: 27
+    Mid: 114
+    word1: 
+    word2: 
+    word3: 
+    word4: 
+  - id: 
+    type: "\u8D4F\u91D1\u730E\u4EBA"
+    name: 5
+    hp: 79
+    atk: 26
+    def: 35
+    psy: 18
+    san: 35
+    Mid: 114
+    word1: 
+    word2: 
+    word3: 
+    word4: 
+  - id: 
+    type: "\u8D4F\u91D1\u730E\u4EBA"
+    name: 6
+    hp: 103
+    atk: 34
+    def: 46
+    psy: 23
+    san: 46
+    Mid: 114
+    word1: 
+    word2: 
+    word3: 
+    word4: 
+  - id: 
+    type: "\u8D4F\u91D1\u730E\u4EBA"
+    name: 7
+    hp: 133
+    atk: 44
+    def: 59
+    psy: 30
+    san: 59
+    Mid: 114
+    word1: 
+    word2: 
+    word3: 
+    word4: 
+  - id: 
+    type: "\u8D4F\u91D1\u730E\u4EBA"
+    name: 8
+    hp: 173
+    atk: 58
+    def: 77
+    psy: 38
+    san: 77
+    Mid: 114
+    word1: 
+    word2: 
+    word3: 
+    word4: 

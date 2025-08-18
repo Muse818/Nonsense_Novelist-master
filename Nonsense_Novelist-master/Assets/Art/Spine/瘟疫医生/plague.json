@@ -1,0 +1,169 @@
+{ "skeleton": { "images": "D:/草稿箱/gamejams/离谱动画/瘟疫医生/images/" },
+"PhotoshopToSpine": { "scale": 0.75, "padding": 1, "trim": true },
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "box", "bone": "root", "attachment": "box" },
+	{ "name": "uparm2", "bone": "root", "attachment": "uparm2" },
+	{ "name": "downarm2", "bone": "root", "attachment": "downarm2" },
+	{ "name": "body2", "bone": "root", "attachment": "body2" },
+	{ "name": "cloth2", "bone": "root", "attachment": "cloth2" },
+	{ "name": "leg1", "bone": "root", "attachment": "leg1" },
+	{ "name": "tail", "bone": "root", "attachment": "tail" },
+	{ "name": "body", "bone": "root", "attachment": "body" },
+	{ "name": "eye2", "bone": "root", "attachment": "eye2" },
+	{ "name": "eye1", "bone": "root", "attachment": "eye1" },
+	{ "name": "towel", "bone": "root", "attachment": "towel" },
+	{ "name": "foot2", "bone": "root", "attachment": "foot2" },
+	{ "name": "foot1", "bone": "root", "attachment": "foot1" },
+	{ "name": "neck", "bone": "root", "attachment": "neck" },
+	{ "name": "knife", "bone": "root", "attachment": "knife" },
+	{ "name": "hand", "bone": "root", "attachment": "hand" },
+	{ "name": "arm1", "bone": "root", "attachment": "arm1" },
+	{ "name": "collar2", "bone": "root", "attachment": "collar2" },
+	{ "name": "line", "bone": "root", "attachment": "line" },
+	{ "name": "collar", "bone": "root", "attachment": "collar" },
+	{ "name": "head", "bone": "root", "attachment": "head" },
+	{ "name": "hat", "bone": "root", "attachment": "hat" },
+	{ "name": "bookcover2", "bone": "root", "attachment": "bookcover2" },
+	{ "name": "paper5", "bone": "root", "attachment": "paper5" },
+	{ "name": "paper4", "bone": "root", "attachment": "paper4" },
+	{ "name": "paper3", "bone": "root", "attachment": "paper3" },
+	{ "name": "paper2", "bone": "root", "attachment": "paper2" },
+	{ "name": "paper1", "bone": "root", "attachment": "paper1" },
+	{ "name": "bookcover1", "bone": "root", "attachment": "bookcover1" },
+	{ "name": "hand1", "bone": "root", "attachment": "hand1" },
+	{ "name": "rat_tail", "bone": "root", "attachment": "rat_tail" },
+	{ "name": "rat_body", "bone": "root", "attachment": "rat_body" },
+	{ "name": "rat_ear2", "bone": "root", "attachment": "rat_ear2" },
+	{ "name": "rat_head", "bone": "root", "attachment": "rat_head" },
+	{ "name": "rat_hand2", "bone": "root", "attachment": "rat_hand2" },
+	{ "name": "rat_leg1", "bone": "root", "attachment": "rat_leg1" },
+	{ "name": "rat_ear1", "bone": "root", "attachment": "rat_ear1" },
+	{ "name": "rat_hand1", "bone": "root", "attachment": "rat_hand1" },
+	{ "name": "rat_eye", "bone": "root", "attachment": "rat_eye" }
+],
+"skins": {
+	"default": {
+		"box": {
+			"box": { "x": 229.75, "y": -444.5, "width": 235, "height": 375 }
+		},
+		"uparm2": {
+			"uparm2": { "x": 547, "y": -593.5, "width": 199, "height": 157 }
+		},
+		"downarm2": {
+			"downarm2": { "x": 658.75, "y": -609, "width": 151, "height": 140 }
+		},
+		"body2": {
+			"body2": { "x": 623, "y": -793.25, "width": 72, "height": 183 }
+		},
+		"cloth2": {
+			"cloth2": { "x": 334, "y": -865.5, "width": 415, "height": 83 }
+		},
+		"leg1": {
+			"leg1": { "x": 497.75, "y": -771.75, "width": 240, "height": 245 }
+		},
+		"tail": {
+			"tail": { "x": 179.25, "y": -731, "width": 323, "height": 321 }
+		},
+		"body": {
+			"body": { "x": 448, "y": -597.25, "width": 433, "height": 595 }
+		},
+		"eye2": {
+			"eye2": { "x": 382.5, "y": -866.75, "width": 56, "height": 21 }
+		},
+		"eye1": {
+			"eye1": { "x": 568, "y": -596.25, "width": 16, "height": 32 }
+		},
+		"towel": {
+			"towel": { "x": 459.25, "y": -593.5, "width": 226, "height": 532 }
+		},
+		"foot2": {
+			"foot2": { "x": 656, "y": -875.5, "width": 141, "height": 43 }
+		},
+		"foot1": {
+			"foot1": { "x": 611.5, "y": -883.5, "width": 166, "height": 38 }
+		},
+		"neck": {
+			"neck": { "x": 507.5, "y": -318.75, "width": 270, "height": 224 }
+		},
+		"knife": {
+			"knife": { "x": 365.75, "y": -693.5, "width": 486, "height": 99 }
+		},
+		"hand": {
+			"hand": { "x": 465.25, "y": -680.75, "width": 103, "height": 135 }
+		},
+		"arm1": {
+			"arm1": { "x": 434.5, "y": -529.75, "width": 232, "height": 328 }
+		},
+		"collar2": {
+			"collar2": { "x": 477, "y": -417.25, "width": 251, "height": 277 }
+		},
+		"line": {
+			"line": { "x": 425.5, "y": -415, "width": 238, "height": 196 }
+		},
+		"collar": {
+			"collar": { "x": 457.25, "y": -391.75, "width": 294, "height": 250 }
+		},
+		"head": {
+			"head": { "x": 672.5, "y": -313.75, "width": 234, "height": 205 }
+		},
+		"hat": {
+			"hat": { "x": 581.75, "y": -197.25, "width": 651, "height": 221 }
+		},
+		"bookcover2": {
+			"bookcover2": { "x": 762.25, "y": -494.5, "width": 136, "height": 160 }
+		},
+		"paper5": {
+			"paper5": { "x": 755.5, "y": -494, "width": 121, "height": 153 }
+		},
+		"paper4": {
+			"paper4": { "x": 724.75, "y": -484.25, "width": 103, "height": 159 }
+		},
+		"paper3": {
+			"paper3": { "x": 711.25, "y": -479, "width": 127, "height": 165 }
+		},
+		"paper2": {
+			"paper2": { "x": 704.25, "y": -481.75, "width": 140, "height": 163 }
+		},
+		"paper1": {
+			"paper1": { "x": 702.75, "y": -493, "width": 140, "height": 154 }
+		},
+		"bookcover1": {
+			"bookcover1": { "x": 704.75, "y": -506, "width": 174, "height": 153 }
+		},
+		"hand1": {
+			"hand1": { "x": 717, "y": -548.75, "width": 131, "height": 108 }
+		},
+		"rat_tail": {
+			"rat_tail": { "x": 434.5, "y": -221.5, "width": 118, "height": 100 }
+		},
+		"rat_body": {
+			"rat_body": { "x": 567.75, "y": -190.75, "width": 188, "height": 124 }
+		},
+		"rat_ear2": {
+			"rat_ear2": { "x": 633.5, "y": -154, "width": 30, "height": 28 }
+		},
+		"rat_head": {
+			"rat_head": { "x": 609, "y": -182.5, "width": 92, "height": 67 }
+		},
+		"rat_hand2": {
+			"rat_hand2": { "x": 559.75, "y": -235.25, "width": 31, "height": 30 }
+		},
+		"rat_leg1": {
+			"rat_leg1": { "x": 471.75, "y": -197.5, "width": 41, "height": 25 }
+		},
+		"rat_ear1": {
+			"rat_ear1": { "x": 660, "y": -174.75, "width": 38, "height": 32 }
+		},
+		"rat_hand1": {
+			"rat_hand1": { "x": 653.5, "y": -235, "width": 46, "height": 31 }
+		},
+		"rat_eye": {
+			"rat_eye": { "x": 624.5, "y": -176.25, "width": 30, "height": 26 }
+		}
+	}
+},
+"animations": { "animation": {} }
+}

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cf2a644c5d71af4e8adae713d4a149c, type: 3}
+  m_Name: Z_013ALita
+  m_EditorClassIdentifier: 
+  unitName: "\u963F\u4E3D\u5854"
+  prefab: {fileID: 3837959891539934793, guid: a3b7ea579aa180f40839d807138ce191, type: 3}
+  uiPrefab: {fileID: 0}
+  infoShort: "\u8FD9\u662F\u4E00\u4E2A\u6D4B\u8BD5\u89D2\u8272\uFF0C\u6B64\u5904\u8BB0\u5F55\u5176\u7B80\u8981\u63CF\u8FF0\u3002"
+  infoDetail: "\u8FD9\u662F\u4E00\u4E2A\u6D4B\u8BD5\u89D2\u8272\uFF0C\u6B64\u5904\u8BB0\u5F55\u5176\u8BE6\u7EC6\u63CF\u8FF0\u3002\u6D4B\u8BD5\u89D2\u8272\u51FA\u8EAB\u4E00\u4E2A\u53EF\u601C\u7684\u591C\u665A\uFF0C\u5979\u7684\u4F5C\u8005\u6B63\u5750\u5728\u7535\u8111\u524D\u82E6\u601D\u51A5\u60F3\u2026\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u63CF\u8FF0\u3002"
+  pic: {fileID: 2800000, guid: 65c15d3367963f941a131c8cf72ddf89, type: 3}
+  sprite: {fileID: 2800000, guid: 65c15d3367963f941a131c8cf72ddf89, type: 3}
+  animatorController: {fileID: 9100000, guid: 8607cd5107c4df2478c560336310d6bf, type: 2}
+  roleName: "\u8D5B\u535A\u683C"
+  roleInfo: "\u3010\u6D4B\u8BD5\u3011\u7CBE\u795E+15%"

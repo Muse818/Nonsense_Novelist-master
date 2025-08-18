@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 534234ceaacd28041bf8024e27c9770a, type: 3}
+  m_Name: AllDataSo
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: ea8a1c93cd7a6b4488bf19d8fe0b7ecd, type: 2}
+  monsterDate: {fileID: 11400000, guid: 5a21041f03b31df419fd1b9f2ac3e93d, type: 2}
+  cardRareDate: {fileID: 11400000, guid: 79a948a4801e85e4f875efab0be8228b, type: 2}
+  charaInfo: {fileID: 11400000, guid: 5e03d8da7b4d38f448fd422125511716, type: 2}

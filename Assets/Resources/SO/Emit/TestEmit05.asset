@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e73473ffd4240c793d9ac365c9b2bed, type: 3}
+  m_Name: TestEmit05
+  m_EditorClassIdentifier: 
+  projName: "\u7535\u5149\u74031"
+  projObject: {fileID: 2132975064799069142, guid: f875d955d961585409b7794309f84a2d, type: 3}
+  emitterFx: {fileID: 0}
+  arriverFx: {fileID: 0}

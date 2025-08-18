@@ -1,0 +1,15 @@
+{
+    "word":
+    {
+        "maxVerbNum" : 3,
+        "maxPreColTimes":5,
+        "wordBallRadius":0.3,
+        "wordBallMinSpeed":4,
+        "wordBallMaxSpeed":4,
+        "wordBallFriction":0.02,
+        "wordBallCollisionLoss":0.5,
+        "wordBallChargingMaxTime":3,
+        "maxAngle":70
+    }
+
+}

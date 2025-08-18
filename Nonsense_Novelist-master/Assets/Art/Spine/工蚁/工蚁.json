@@ -1,0 +1,101 @@
+{ "skeleton": { "images": "D:/草稿箱/gamejams/离谱动画/工蚁/image/" },
+"PhotoshopToSpine": { "scale": 1, "padding": 1, "trim": true },
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "butten", "bone": "root", "attachment": "butten" },
+	{ "name": "leg3", "bone": "root", "attachment": "leg3" },
+	{ "name": "upleg3", "bone": "root", "attachment": "upleg3" },
+	{ "name": "arm2", "bone": "root", "attachment": "arm2" },
+	{ "name": "hand2", "bone": "root", "attachment": "hand2" },
+	{ "name": "body", "bone": "root", "attachment": "body" },
+	{ "name": "upleg2", "bone": "root", "attachment": "upleg2" },
+	{ "name": "leg2", "bone": "root", "attachment": "leg2" },
+	{ "name": "upleg1", "bone": "root", "attachment": "upleg1" },
+	{ "name": "leg1", "bone": "root", "attachment": "leg1" },
+	{ "name": "apron", "bone": "root", "attachment": "apron" },
+	{ "name": "arm1", "bone": "root", "attachment": "arm1" },
+	{ "name": "hand1", "bone": "root", "attachment": "hand1" },
+	{ "name": "tentacle2_2", "bone": "root", "attachment": "tentacle2_2" },
+	{ "name": "tentacle2_1", "bone": "root", "attachment": "tentacle2_1" },
+	{ "name": "hair", "bone": "root", "attachment": "hair" },
+	{ "name": "face", "bone": "root", "attachment": "face" },
+	{ "name": "hat", "bone": "root", "attachment": "hat" },
+	{ "name": "tentacle1_1", "bone": "root", "attachment": "tentacle1_1" },
+	{ "name": "tentacle1_2", "bone": "root", "attachment": "tentacle1_2" },
+	{ "name": "eye", "bone": "root", "attachment": "eye" },
+	{ "name": "mouth", "bone": "root", "attachment": "mouth" }
+],
+"skins": {
+	"default": {
+		"butten": {
+			"butten": { "x": 158, "y": -317.5, "width": 218, "height": 171 }
+		},
+		"leg3": {
+			"leg3": { "x": 386.5, "y": -398, "width": 87, "height": 186 }
+		},
+		"upleg3": {
+			"upleg3": { "x": 332, "y": -345, "width": 60, "height": 68 }
+		},
+		"arm2": {
+			"arm2": { "x": 346, "y": -305, "width": 48, "height": 118 }
+		},
+		"hand2": {
+			"hand2": { "x": 342, "y": -381, "width": 28, "height": 88 }
+		},
+		"body": {
+			"body": { "x": 294.5, "y": -300, "width": 99, "height": 188 }
+		},
+		"upleg2": {
+			"upleg2": { "x": 236.5, "y": -338.5, "width": 63, "height": 65 }
+		},
+		"leg2": {
+			"leg2": { "x": 192, "y": -388, "width": 88, "height": 192 }
+		},
+		"upleg1": {
+			"upleg1": { "x": 175.5, "y": -338, "width": 57, "height": 74 }
+		},
+		"leg1": {
+			"leg1": { "x": 92, "y": -382, "width": 138, "height": 198 }
+		},
+		"apron": {
+			"apron": { "x": 273.5, "y": -374.5, "width": 65, "height": 63 }
+		},
+		"arm1": {
+			"arm1": { "x": 275, "y": -306, "width": 64, "height": 130 }
+		},
+		"hand1": {
+			"hand1": { "x": 312, "y": -383.5, "width": 58, "height": 91 }
+		},
+		"tentacle2_2": {
+			"tentacle2_2": { "x": 453, "y": -129.5, "width": 48, "height": 105 }
+		},
+		"tentacle2_1": {
+			"tentacle2_1": { "x": 396.5, "y": -97.5, "width": 75, "height": 69 }
+		},
+		"hair": {
+			"hair": { "x": 243, "y": -195, "width": 38, "height": 36 }
+		},
+		"face": {
+			"face": { "x": 324, "y": -162.5, "width": 172, "height": 169 }
+		},
+		"hat": {
+			"hat": { "x": 295.5, "y": -106.5, "width": 243, "height": 191 }
+		},
+		"tentacle1_1": {
+			"tentacle1_1": { "x": 311, "y": -90.5, "width": 54, "height": 79 }
+		},
+		"tentacle1_2": {
+			"tentacle1_2": { "x": 371, "y": -119.5, "width": 72, "height": 107 }
+		},
+		"eye": {
+			"eye": { "x": 310, "y": -185, "width": 90, "height": 42 }
+		},
+		"mouth": {
+			"mouth": { "x": 330, "y": -226, "width": 22, "height": 12 }
+		}
+	}
+},
+"animations": { "animation": {} }
+}

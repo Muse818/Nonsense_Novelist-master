@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 221f047a4d846b24fbde340c22d8b8d7, type: 3}
+  m_Name: TestCardSO1
+  m_EditorClassIdentifier: 
+  unitName: "\u6D4B\u8BD5\u5361\u724C1"
+  prefab: "\u8FD9\u91CC\u653E\u63CF\u8FF0\uFF0C\u5BCC\u6587\u672C"
+  infoShort: {fileID: 2800000, guid: f8e9f6cf1f75971438d698b9573b0c46, type: 3}
+  relativeCard:
+  - {fileID: 11400000, guid: ef04c23256936c1458ae4f237ea591dd, type: 2}

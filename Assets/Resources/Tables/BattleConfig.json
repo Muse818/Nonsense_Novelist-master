@@ -1,0 +1,35 @@
+{
+    "word": 
+    {
+        "maxVerbNum" : 3,
+        "maxPreColTimes":5,
+        "wordBallRadius":0.3,
+        "wordBallMinSpeed":0,
+        "wordBallMaxSpeed":4,
+        "wordBallFriction":0.02,
+        "wordBallCollisionLoss":0.5,
+        "wordBallChargingMinTime":0.3,
+        "wordBallChargingMaxTime":1,
+        "maxAngle":70,
+        "initLoadCount":3,                      //初始加载词条数
+        "maxLoadCount":5,                       //最大加载词条数
+        "loadSec":4                             //词条加载时长
+    },
+    
+    "unit": 
+    {
+        "scale" : 1.0,
+        "nounInitSlotNum" :7,
+        "nounMaxSlotNum" :10,
+        "verbDefaultSlotNum" :3,
+        "verbMaxSlotNum" : 5,
+        "servantDefaultSlotNum" : 3,
+        "servantMaxSlotNum ": 4
+
+    },
+
+    "camp":
+    {
+        "initCampHp":100
+    }
+}
