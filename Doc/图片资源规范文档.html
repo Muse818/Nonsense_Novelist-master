@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>项目图片资源规范文档</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e40af',
+                        secondary: '#3b82f6',
+                        accent: '#60a5fa',
+                        neutral: '#f3f4f6',
+                        dark: '#1e293b'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .transition-height {
+                transition: max-height 0.5s ease;
+            }
+            .text-shadow {
+                text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            .card-hover {
+                @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans text-gray-800">
+    <!-- 顶部导航 -->
+    <header class="sticky top-0 z-50 bg-white shadow-md transition-all duration-300">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fa fa-picture-o text-primary text-2xl"></i>
+                <h1 class="text-xl md:text-2xl font-bold text-primary">图片资源规范文档</h1>
+            </div>
+            <button id="toggle-toc" class="md:hidden text-primary p-2">
+                <i class="fa fa-bars text-xl"></i>
+            </button>
+            <nav class="hidden md:block">
+                <ul class="flex space-x-6">
+                    <li><a href="#naming" class="hover:text-secondary transition-colors">命名规范</a></li>
+                    <li><a href="#size" class="hover:text-secondary transition-colors">大小与裁切</a></li>
+                    <li><a href="#organization" class="hover:text-secondary transition-colors">资源组织</a></li>
+                    <li><a href="#examples" class="hover:text-secondary transition-colors">示例</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container mx-auto px-4 py-8 flex flex-col md:flex-row">
+        <!-- 侧边栏目录 -->
+        <aside id="toc" class="hidden md:block md:w-1/4 lg:w-1/5 pr-6 mb-8 md:mb-0">
+            <div class="sticky top-24 bg-white rounded-lg shadow p-4">
+                <h2 class="text-lg font-semibold mb-4 pb-2 border-b border-gray-200">目录</h2>
+                <ul class="space-y-2 text-sm">
+                    <li>
+                        <a href="#naming" class="block hover:text-secondary transition-colors">
+                            一、图片命名规范
+                        </a>
+                    </li>
+                    <li class="pl-4">
+                        <a href="#principles" class="block hover:text-secondary transition-colors">1. 基本原则</a>
+                    </li>
+                    <li class="pl-4">
+                        <a href="#format" class="block hover:text-secondary transition-colors">2. 命名格式</a>
+                    </li>
+                    <li class="pl-4">
+                        <a href="#special" class="block hover:text-secondary transition-colors">3. 特殊类型图片命名</a>
+                    </li>
+                    <li>
+                        <a href="#size" class="block hover:text-secondary transition-colors">
+                            二、图片大小与裁切规范
+                        </a>
+                    </li>
+                    <li class="pl-4">
+                        <a href="#size-principles" class="block hover:text-secondary transition-colors">1. 通用原则</a>
+                    </li>
+                    <li class="pl-4">
+                        <a href="#size-requirements" class="block hover:text-secondary transition-colors">2. 具体尺寸要求</a>
+                    </li>
+                    <li class="pl-4">
+                        <a href="#optimization" class="block hover:text-secondary transition-colors">3. 图片优化要求</a>
+                    </li>
+                    <li>
+                        <a href="#organization" class="block hover:text-secondary transition-colors">
+                            三、资源组织规范
+                        </a>
+                    </li>
+                    <li class="pl-4">
+                        <a href="#directory" class="block hover:text-secondary transition-colors">1. 目录结构</a>
+                    </li>
+                    <li class="pl-4">
+                        <a href="#versioning" class="block hover:text-secondary transition-colors">2. 版本管理</a>
+                    </li>
+                    <li>
+                        <a href="#examples" class="block hover:text-secondary transition-colors">
+                            四、示例
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- 主要内容 -->
+        <main class="md:w-3/4 lg:w-4/5">
+            <!-- 介绍卡片 -->
+            <div class="bg-gradient-to-r from-primary to-secondary text-white rounded-xl p-6 mb-8 shadow-lg">
+                <h2 class="text-2xl font-bold mb-2">项目图片资源规范</h2>
+                <p class="opacity-90">本文档规定了项目中所有图片资源的命名、尺寸、优化和组织标准，旨在确保团队协作效率和资源管理一致性。</p>
+            </div>
+
+            <!-- 命名规范部分 -->
+            <section id="naming" class="mb-10">
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <div class="section-header bg-primary text-white p-4 cursor-pointer flex justify-between items-center">
+                        <h2 class="text-xl font-bold">一、图片命名规范</h2>
+                        <i class="fa fa-chevron-down transition-transform duration-300"></i>
+                    </div>
+                    <div class="section-content p-6 space-y-6">
+                        <!-- 基本原则 -->
+                        <div id="principles">
+                            <h3 class="text-lg font-semibold mb-3 text-primary">1. 基本原则</h3>
+                            <div class="bg-neutral rounded-lg p-4 space-y-2">
+                                <div class="flex items-start">
+                                    <i class="fa fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <p><strong>唯一性</strong>：确保每个文件名在项目中唯一</p>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fa fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <p><strong>兼容性</strong>：文件名中不要使用特殊字符（如空格、&、%等），推荐使用下划线(_)或连字符(-)分隔单词</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 命名格式 -->
+                        <div id="format">
+                            <h3 class="text-lg font-semibold mb-3 text-primary">2. 命名格式</h3>
+                            
+                            <h4 class="font-medium mb-2">2.1 通用命名格式</h4>
+                            <div class="bg-dark text-white p-3 rounded font-mono text-sm mb-4 inline-block">
+                                [类型前缀]_[描述]_[属性]_[序号].png
+                            </div>
+                            <ul class="list-disc pl-6 mb-4 space-y-1">
+                                <li><strong>类型前缀</strong>：表示图片所属的功能类型（见2.2类型前缀表）</li>
+                                <li><strong>描述</strong>：简洁描述图片内容（英文或拼音，避免生僻词汇）</li>
+                                <li><strong>属性</strong>：可选，表示图片的特殊属性（如颜色、状态等）</li>
+                                <li><strong>序号</strong>：必要时使用数字序号区分同类图片</li>
+                            </ul>
+
+                            <h4 class="font-medium mb-2">2.2 类型前缀表</h4>
+                            <div class="overflow-x-auto">
+                                <table class="min-w-full bg-white border border-gray-200 rounded-lg">
+                                    <thead>
+                                        <tr class="bg-gray-100">
+                                            <th class="py-2 px-4 border-b text-left">前缀</th>
+                                            <th class="py-2 px-4 border-b text-left">含义</th>
+                                            <th class="py-2 px-4 border-b text-left">示例</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="hover:bg-gray-50">
+                                            <td class="py-2 px-4 border-b font-medium">adj</td>
+                                            <td class="py-2 px-4 border-b">形容词卡片</td>
+                                            <td class="py-2 px-4 border-b font-mono text-sm">adj_happy_1.png</td>
+                                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                                            <td class="py-2 px-4 border-b font-medium">noun</td>
+                                            <td class="py-2 px-4 border-b">名词/物品卡片</td>
+                                            <td class="py-2 px-4 border-b font-mono text-sm">noun_sword_2.png</td>
+                                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                                            <td class="py-2 px-4 border-b font-medium">verb</td>
+                                            <td class="py-2 px-4 border-b">动词卡片</td>
+                                            <td class="py-2 px-4 border-b font-mono text-sm">verb_attack_3.png</td>
+                                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                                            <td class="py-2 px-4 border-b font-medium">buff</td>
+                                            <td class="py-2 px-4 border-b">状态效果图标</td>
+                                            <td class="py-2 px-4 border-b font-mono text-sm">buff_poison_4.png</td>
+                                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                                            <td class="py-2 px-4 border-b font-medium">char</td>
+                                            <td class="py-2 px-4 border-b">角色相关图片</td>
+                                            <td class="py-2 px-4 border-b font-mono text-sm">char_player_idle.png</td>
+                                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                                            <td class="py-2 px-4 border-b font-medium">ui</td>
+                                            <td class="py-2 px-4 border-b">UI元素</td>
+                                            <td class="py-2 px-4 border-b font-mono text-sm">ui_button_ok.png</td>
+                                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                                            <td class="py-2 px-4 border-b font-medium">bg</td>
+                                            <td class="py-2 px-4 border-b">背景图</td>
+                                            <td class="py-2 px-4 border-b font-mono text-sm">bg_main_menu.png</td>
+                                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                                            <td class="py-2 px-4 border-b font-medium">effect</td>
+                                            <td class="py-2 px-4 border-b">特效图片</td>
+                                            <td class="py-2 px-4 border-b font-mono text-sm">effect_explosion_5.png</td>
+                                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                                            <td class="py-2 px-4 border-b font-medium">spine</td>
+                                            <td class="py-2 px-4 border-b">Spine动画图集</td>
+                                            <td class="py-2 px-4 border-b font-mono text-sm">spine_dragon_6.png</td>
+                                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                                            <td class="py-2 px-4 border-b font-medium">bullet</td>
+                                            <td class="py-2 px-4 border-b">弹道特效</td>
+                                            <td class="py-2 px-4 border-b font-mono text-sm">bullet_fire_7.png</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- 特殊类型图片命名 -->
+                        <div id="special">
+                            <h3 class="text-lg font-semibold mb-3 text-primary">3. 特殊类型图片命名</h3>
+                            
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div class="bg-neutral rounded-lg p-4 card-hover">
+                                    <h4 class="font-medium mb-2">3.1 角色/敌人图片</h4>
+                                    <div class="bg-dark text-white p-2 rounded font-mono text-sm mb-2">
+                                        char_[角色名称]_[状态/动作].png
+                                    </div>
+                                    <p class="text-sm">示例：<code>char_hero_idle.png</code>、<code>char_boss_attack.png</code></p>
+                                </div>
+                                
+                                <div class="bg-neutral rounded-lg p-4 card-hover">
+                                    <h4 class="font-medium mb-2">3.2 UI元素图片</h4>
+                                    <div class="bg-dark text-white p-2 rounded font-mono text-sm mb-2">
+                                        ui_[界面名称]_[元素类型]_[状态].png
+                                    </div>
+                                    <p class="text-sm">示例：<code>ui_menu_button_normal.png</code>、<code>ui_settings_slider_disabled.png</code></p>
+                                </div>
+                                
+                                <div class="bg-neutral rounded-lg p-4 card-hover">
+                                    <h4 class="font-medium mb-2">3.3 特效图片</h4>
+                                    <div class="bg-dark text-white p-2 rounded font-mono text-sm mb-2">
+                                        [effect/bullet]_[特效名称]_[序号].png
+                                    </div>
+                                    <p class="text-sm">示例：<code>effect_fire_1.png</code>、<code>bullet_ice_2.png</code></p>
+                                </div>
+                                
+                                <div class="bg-neutral rounded-lg p-4 card-hover">
+                                    <h4 class="font-medium mb-2">3.4 Spine动画图集</h4>
+                                    <div class="bg-dark text-white p-2 rounded font-mono text-sm mb-2">
+                                        spine_[角色/物品名称].png
+                                    </div>
+                                    <p class="text-sm">示例：<code>spine_dragon.png</code>、<code>spine_skeleton.png</code></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 图片大小与裁切规范 -->
+            <section id="size" class="mb-10">
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <div class="section-header bg-primary text-white p-4 cursor-pointer flex justify-between items-center">
+                        <h2 class="text-xl font-bold">二、图片大小与裁切规范</h2>
+                        <i class="fa fa-chevron-down transition-transform duration-300"></i>
+                    </div>
+                    <div class="section-content p-6 space-y-6">
+                        <!-- 通用原则 -->
+                        <div id="size-principles">
+                            <h3 class="text-lg font-semibold mb-3 text-primary">1. 通用原则</h3>
+                            <ul class="space-y-2">
+                                <li class="flex items-start">
+                                    <i class="fa fa-circle text-xs text-secondary mt-1.5 mr-2"></i>
+                                    <span>保持适当的尺寸，避免过大影响性能</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa fa-circle text-xs text-secondary mt-1.5 mr-2"></i>
+                                    <span>确保图片比例一致，避免拉伸变形</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa fa-circle text-xs text-secondary mt-1.5 mr-2"></i>
+                                    <span>对于需要缩放的图片，保持原始清晰度</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- 具体尺寸要求 -->
+                        <div id="size-requirements">
+                            <h3 class="text-lg font-semibold mb-3 text-primary">2. 具体尺寸要求</h3>
+                            <div class="overflow-x-auto">
+                                <table class="min-w-full bg-white border border-gray-200 rounded-lg">
+                                    <thead>
+                                        <tr class="bg-gray-100">
+                                            <th class="py-2 px-4 border-b text-left">图片类型</th>
+                                            <th class="py-2 px-4 border-b text-left">推荐尺寸</th>
+                                            <th class="py-2 px-4 border-b text-left">格式</th>
+                                            <th class="py-2 px-4 border-b text-left">说明</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="hover:bg-gray-50">
+                                            <td class="py-2 px-4 border-b">卡片图片</td>
+                                            <td class="py-2 px-4 border-b font-mono text-sm">200×300px</td>
+                                            <td class="py-2 px-4 border-b">PNG</td>
+                                            <td class="py-2 px-4 border-b">形容词、名词、动词卡片统一尺寸</td>
+                                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                                            <td class="py-2 px-4 border-b">角色头像</td>
+                                            <td class="py-2 px-4 border-b font-mono text-sm">128×128px</td>
+                                            <td class="py-2 px-4 border-b">PNG</td>
+                                            <td class="py-2 px-4 border-b">圆形头像需预留足够边缘</td>
+                                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                                            <td class="py-2 px-4 border-b">UI按钮</td>
+                                            <td class="py-2 px-4 border-b font-mono text-sm">80×80px / 120×40px</td>
+                                            <td class="py-2 px-4 border-b">PNG</td>
+                                            <td class="py-2 px-4 border-b">根据界面布局调整</td>
+                                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                                            <td class="py-2 px-4 border-b">背景图</td>
+                                            <td class="py-2 px-4 border-b font-mono text-sm">1920×1080px</td>
+                                            <td class="py-2 px-4 border-b">PNG</td>
+                                            <td class="py-2 px-4 border-b">适配游戏分辨率</td>
+                                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                                            <td class="py-2 px-4 border-b">特效图片</td>
+                                            <td class="py-2 px-4 border-b font-mono text-sm">不超过512×512px</td>
+                                            <td class="py-2 px-4 border-b">PNG</td>
+                                            <td class="py-2 px-4 border-b">保持特效清晰同时控制文件大小</td>
+                                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                                            <td class="py-2 px-4 border-b">弹道图片</td>
+                                            <td class="py-2 px-4 border-b font-mono text-sm">64×64px / 128×32px</td>
+                                            <td class="py-2 px-4 border-b">PNG</td>
+                                            <td class="py-2 px-4 border-b">根据弹道类型调整</td>
+                                        </tr>
+                                        <tr class="hover:bg-gray-50">
+                                            <td class="py-2 px-4 border-b">Spine图集</td>
+                                            <td class="py-2 px-4 border-b font-mono text-sm">不超过2048×2048px</td>
+                                            <td class="py-2 px-4 border-b">PNG</td>
+                                            <td class="py-2 px-4 border-b">合理打包以减少Draw Call</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- 图片优化要求 -->
+                        <div id="optimization">
+                            <h3 class="text-lg font-semibold mb-3 text-primary">3. 图片优化要求</h3>
+                            <div class="bg-blue-50 border-l-4 border-primary p-4 rounded-r">
+                                <ul class="space-y-2">
+                                    <li class="flex items-start">
+                                        <i class="fa fa-compress text-primary mt-1 mr-2"></i>
+                                        <span>所有PNG图片需进行压缩，推荐使用TinyPNG等工具</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fa fa-paint-brush text-primary mt-1 mr-2"></i>
+                                        <span>对于色彩丰富的图片，使用RGB模式；对于简单图形，使用索引颜色模式</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fa fa-scissors text-primary mt-1 mr-2"></i>
+                                        <span>移除图片中不必要的透明区域，减少文件大小</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fa fa-film text-primary mt-1 mr-2"></i>
+                                        <span>对于序列帧动画，确保帧之间的尺寸一致</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 资源组织规范 -->
+            <section id="organization" class="mb-10">
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <div class="section-header bg-primary text-white p-4 cursor-pointer flex justify-between items-center">
+                        <h2 class="text-xl font-bold">三、资源组织规范</h2>
+                        <i class="fa fa-chevron-down transition-transform duration-300"></i>
+                    </div>
+                    <div class="section-content p-6 space-y-6">
+                        <!-- 目录结构 -->
+                        <div id="directory">
+                            <h3 class="text-lg font-semibold mb-3 text-primary">1. 目录结构</h3>
+                            <div class="bg-dark text-green-400 p-4 rounded-lg font-mono text-sm overflow-x-auto">
+                                <pre>Assets/
+├── Art/
+│   ├── Characters/    # 角色图片
+│   ├── UI/            # UI元素
+│   ├── Effects/       # 特效图片
+│   ├── Backgrounds/   # 背景图
+│   └── Spine/         # Spine动画资源
+├── Resources/
+│   ├── WordImage/     # 词汇相关图片
+│   │   ├── Adj/       # 形容词卡片
+│   │   ├── Noun/      # 名词卡片
+│   │   ├── Verb/      # 动词卡片
+│   │   └── Buffs/     # 状态效果图标
+│   └── VFX/           # 特效资源
+└── Prefabs/
+    └── UI/            # UI预制件</pre>
+                            </div>
+                        </div>
+
+                        <!-- 版本管理 -->
+                        <div id="versioning">
+                            <h3 class="text-lg font-semibold mb-3 text-primary">2. 版本管理</h3>
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                <div class="bg-neutral p-4 rounded-lg text-center card-hover">
+                                    <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3">
+                                        <i class="fa fa-tag text-primary text-xl"></i>
+                                    </div>
+                                    <h4 class="font-medium mb-2">版本标识</h4>
+                                    <p class="text-sm">同一图片的不同版本使用版本号标识，如<code>ui_button_v1.png</code></p>
+                                </div>
+                                
+                                <div class="bg-neutral p-4 rounded-lg text-center card-hover">
+                                    <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3">
+                                        <i class="fa fa-trash text-primary text-xl"></i>
+                                    </div>
+                                    <h4 class="font-medium mb-2">及时清理</h4>
+                                    <p class="text-sm">过时的图片资源应及时清理，避免占用空间</p>
+                                </div>
+                                
+                                <div class="bg-neutral p-4 rounded-lg text-center card-hover">
+                                    <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3">
+                                        <i class="fa fa-backup text-primary text-xl"></i>
+                                    </div>
+                                    <h4 class="font-medium mb-2">源文件备份</h4>
+                                    <p class="text-sm">重要图片资源的源文件应备份在项目外的存储位置</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 示例 -->
+            <section id="examples" class="mb-10">
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <div class="section-header bg-primary text-white p-4 cursor-pointer flex justify-between items-center">
+                        <h2 class="text-xl font-bold">四、示例</h2>
+                        <i class="fa fa-chevron-down transition-transform duration-300"></i>
+                    </div>
+                    <div class="section-content p-6 space-y-6">
+                        <!-- 正确命名示例 -->
+                        <div>
+                            <h3 class="text-lg font-semibold mb-3 text-primary">1. 正确命名示例</h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-mono">adj_happy_1.png</span>
+                                <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-mono">noun_sword_fire_2.png</span>
+                                <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-mono">verb_heal_3.png</span>
+                                <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-mono">buff_poison_4.png</span>
+                                <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-mono">char_dragon_attack.png</span>
+                                <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-mono">ui_menu_button_normal.png</span>
+                            </div>
+                        </div>
+
+                        <!-- 不规范命名示例 -->
+                        <div>
+                            <h3 class="text-lg font-semibold mb-3 text-primary">2. 不规范命名示例</h3>
+                            <div class="space-y-3">
+                                <div class="flex items-center">
+                                    <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm font-mono mr-3">图片1.png</span>
+                                    <span class="text-sm text-gray-600">过于模糊，无法识别内容</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm font-mono mr-3">sword_final_final.png</span>
+                                    <span class="text-sm text-gray-600">重复冗余词汇</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm font-mono mr-3">fire bullet_001.png</span>
+                                    <span class="text-sm text-gray-600">包含空格，可能导致兼容性问题</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm font-mono mr-3">技能_图标_1.png</span>
+                                    <span class="text-sm text-gray-600">中文命名，推荐使用英文或拼音</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- 页脚 -->
+    <footer class="bg-dark text-white py-6">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <div class="flex items-center space-x-2">
+                        <i class="fa fa-picture-o text-accent"></i>
+                        <span class="font-bold">项目图片资源规范文档</span>
+                    </div>
+                    <p class="text-gray-400 text-sm mt-1">版本 1.0.0</p>
+                </div>
+                <div class="text-gray-400 text-sm">
+                    &copy; 2023 项目开发团队. 保留所有权利.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 折叠/展开功能
+        document.addEventListener('DOMContentLoaded', function() {
+            // 默认展开第一个部分
+            const firstSection = document.querySelector('.section-header');
+            if (firstSection) {
+                const content = firstSection.nextElementSibling;
+                const icon = firstSection.querySelector('i');
+                content.style.maxHeight = content.scrollHeight + 'px';
+                icon.classList.add('rotate-180');
+            }
+
+            // 为所有部分添加点击事件
+            const sectionHeaders = document.querySelectorAll('.section-header');
+            sectionHeaders.forEach(header => {
+                header.addEventListener('click', function() {
+                    const content = this.nextElementSibling;
+                    const icon = this.querySelector('i');
+                    
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                        icon.classList.remove('rotate-180');
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + 'px';
+                        icon.classList.add('rotate-180');
+                    }
+                });
+            });
+
+            // 移动端目录切换
+            const toggleToc = document.getElementById('toggle-toc');
+            const toc = document.getElementById('toc');
+            
+            toggleToc.addEventListener('click', function() {
+                if (toc.classList.contains('hidden')) {
+                    toc.classList.remove('hidden');
+                    toc.classList.add('block', 'absolute', 'top-16', 'left-0', 'right-0', 'bg-white', 'z-40', 'p-4', 'shadow-lg');
+                } else {
+                    toc.classList.add('hidden');
+                    toc.classList.remove('block', 'absolute', 'top-16', 'left-0', 'right-0', 'bg-white', 'z-40', 'p-4', 'shadow-lg');
+                }
+            });
+
+            // 点击目录链接后在移动端关闭目录
+            const tocLinks = toc.querySelectorAll('a');
+            tocLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    if (window.innerWidth < 768) {
+                        toc.classList.add('hidden');
+                        toc.classList.remove('block', 'absolute', 'top-16', 'left-0', 'right-0', 'bg-white', 'z-40', 'p-4', 'shadow-lg');
+                    }
+                });
+            });
+
+            // 滚动时导航栏样式变化
+            const header = document.querySelector('header');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 50) {
+                    header.classList.add('py-2');
+                    header.classList.remove('py-4');
+                } else {
+                    header.classList.add('py-4');
+                    header.classList.remove('py-2');
+                }
+            });
+
+            // 平滑滚动
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
