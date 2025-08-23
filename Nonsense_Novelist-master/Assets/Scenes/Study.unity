@@ -4385,7 +4385,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: ShootCombat
-  leastLoadTime: 2
+  leastLoadTime: 0
   canvas: {fileID: 0}
 --- !u!1 &987589227
 GameObject:
