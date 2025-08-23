@@ -292,7 +292,6 @@ public class AfterStart : MonoBehaviour
     {
         if (!one)
             return;
-
         skillList = charaShort.transform.GetChild(4);
         foreach (var eo in skillList.GetComponentsInChildren<Image>())
         {
