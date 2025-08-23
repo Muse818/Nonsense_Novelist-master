@@ -569,7 +569,6 @@ GameObject:
   - component: {fileID: 2357813420043696241}
   - component: {fileID: -3105405567596336704}
   - component: {fileID: 2631833717394192740}
-  - component: {fileID: 7991731364899823610}
   m_Layer: 3
   m_Name: LaoShu
   m_TagString: character
@@ -830,19 +829,6 @@ PolygonCollider2D:
       - {x: -0.6614339, y: -2.781414}
       - {x: 2.0521412, y: -2.5423362}
       - {x: 4.417695, y: -0.6771818}
---- !u!114 &7991731364899823610
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8792533845088263391}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c8f076e03b5495688589e06637149fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mAfterClickScale: 0.44
 --- !u!1001 &4631254520927476050
 PrefabInstance:
   m_ObjectHideFlags: 0
