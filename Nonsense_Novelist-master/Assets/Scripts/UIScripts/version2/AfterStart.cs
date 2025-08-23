@@ -87,7 +87,7 @@ public class AfterStart : MonoBehaviour
             //charaShortP.transform.parent = this.transform.GetComponentInChildren<Canvas>().gameObject.transform;
             charaShortP.transform.SetParent(this.transform.GetComponentInChildren<Canvas>().gameObject.transform);
             charaShortP.transform.localPosition = new Vector3(0, -900, 0);
-            charaShort = charaShortP.transform.GetChild(2);
+            charaShort = charaShortP.transform.GetChild(1);
             uiElement = charaShort.gameObject.GetComponent<RectTransform>();
             if (IsUIOffscreen())
             {

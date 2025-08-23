@@ -135,6 +135,7 @@ public class Shoot : MonoBehaviour
         abs = GameObject.Find("WordCollisionShoot").GetComponent<WordCollisionShoot>().absWord = 
             bulletInstance.AddComponent(GameMgr.instance.GetNowListOne()) as AbstractWord0;*/
         
+        
        
         if (!CreateOneCharacter.firstUseCardlist)//true，开始之后抽一个
         {
