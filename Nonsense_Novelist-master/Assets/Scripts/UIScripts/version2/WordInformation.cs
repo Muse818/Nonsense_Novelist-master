@@ -312,9 +312,6 @@ public class WordInformation : MonoBehaviour, IPointerEnterHandler, IPointerExit
     void ChangeDetailInfo()
     {
         //从词语中取到其lable的名称
-        print(nowWord==null);
-        print(nowWord.mTags==null);
-        
         var _s = nowWord.mTags;
         var commonAsset = AssetManager.GetCommonAsset();
         if (_s == null || _s.Count == 0 || commonAsset == null) 
