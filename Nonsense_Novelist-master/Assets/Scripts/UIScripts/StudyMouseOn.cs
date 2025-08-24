@@ -68,15 +68,15 @@ public class StudyMouseOn : MonoBehaviour
         {
             case StudyUIType.xiezuo:
                 {
-                    //var ls=GetComponent<LoadingScene>();
-                    // if (ls == null)
-                    // {
-                    //     ls=this.gameObject.AddComponent<LoadingScene>();
-                    //     ls.sceneName = "ShootCombat";
-                    // }
-                    // ls.EnterNextScene();
-                    PoolMgr.GetInstance().Clear();
-                    SceneManager.LoadScene("ShootCombat");
+                    var ls=GetComponent<LoadingScene>();
+                     if (ls == null)
+                     {
+                         ls=this.gameObject.AddComponent<LoadingScene>();
+                         ls.sceneName = "ShootCombat";
+                     }
+                     ls.EnterNextScene();
+                    //PoolMgr.GetInstance().Clear();
+                    //SceneManager.LoadScene("ShootCombat");
                     audioSource.Play();
                 }
                 break;
