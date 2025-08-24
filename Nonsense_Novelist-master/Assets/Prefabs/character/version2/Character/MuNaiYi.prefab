@@ -100,7 +100,6 @@ GameObject:
   - component: {fileID: 1887637913}
   - component: {fileID: -5819735466181227385}
   - component: {fileID: 5596189578031062489}
-  - component: {fileID: 4087020482053042793}
   m_Layer: 3
   m_Name: MuNaiYi
   m_TagString: character
@@ -375,19 +374,6 @@ PolygonCollider2D:
       - {x: 4.4592524, y: -0.15423903}
       - {x: 3.7988262, y: 2.1232536}
       - {x: 1.6240265, y: 4.111298}
---- !u!114 &4087020482053042793
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3837959891539934793}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c8f076e03b5495688589e06637149fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mAfterClickScale: 0.44
 --- !u!1 &4084634625184318592
 GameObject:
   m_ObjectHideFlags: 0

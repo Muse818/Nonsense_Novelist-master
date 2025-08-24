@@ -11,6 +11,17 @@
 /[Mm]emoryCaptures/
 /.idea/
 
+# 2025-8-23update
+/Nonsense_Novelist-master/[Ll]ibrary/
+/Nonsense_Novelist-master/[Tt]emp/
+/Nonsense_Novelist-master/[Oo]bj/
+/Nonsense_Novelist-master/[Bb]uild/
+/Nonsense_Novelist-master/[Bb]uilds/
+/Nonsense_Novelist-master/[Ll]ogs/
+/Nonsense_Novelist-master/[Mm]emoryCaptures/
+/Nonsense_Novelist-master/UserSettings/
+
+
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta
 

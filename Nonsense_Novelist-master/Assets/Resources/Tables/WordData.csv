@@ -15,7 +15,7 @@ mkind,Type,AssetName,Name,Forbidden,Book,ShootType,Duration,InitPower,TriggerPow
 20015,1,Verb/V_015ShaYu,沙浴,0,2,0,0,0,4,0,200151
 20016,1,Verb/V_016TongPingGongZheng,同频共振,0,2,0,0,0,4,0,200161
 20023,1,Verb/V_023Shuai,摔,0,2,0,0,0,4,0,200231
-20024,1,Noun/V_024BaoZa,包扎,0,2,0,0,0,2,0,200241
+20024,1,Verb/V_024BaoZa,包扎,0,2,0,0,0,2,0,200241
 30003,2,Adj/A_003YouXiangDe,幽香的,0,2,0,0,0,0,0,300031
 30017,2,Adj/A_017AnYiDe,安逸的,0,2,0,0,0,0,0,300171
 30018,2,Adj/A_018QingXiDe,清晰的,0,2,0,0,0,0,0,300181

@@ -130,7 +130,6 @@ GameObject:
   - component: {fileID: 1479494677}
   - component: {fileID: -2398173083784865602}
   - component: {fileID: 6616519391035118235}
-  - component: {fileID: 3755686315498080929}
   m_Layer: 3
   m_Name: WangXIFeng
   m_TagString: character
@@ -392,19 +391,6 @@ PolygonCollider2D:
       - {x: 0.025216192, y: -4.5408645}
       - {x: 2.2303667, y: -4.1527987}
       - {x: 2.1621482, y: 4.685461}
---- !u!114 &3755686315498080929
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2923459406948245553}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c8f076e03b5495688589e06637149fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mAfterClickScale: 0.44
 --- !u!1 &4783718014092426606
 GameObject:
   m_ObjectHideFlags: 0
