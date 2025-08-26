@@ -77,7 +77,6 @@ public class StudyMouseOn : MonoBehaviour
                      ls.EnterNextScene();
                     //PoolMgr.GetInstance().Clear();
                     //SceneManager.LoadScene("ShootCombat");
-
                     audioSource.Play();
                 }
                 break;
