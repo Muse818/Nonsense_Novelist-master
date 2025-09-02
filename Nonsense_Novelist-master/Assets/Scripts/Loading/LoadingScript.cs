@@ -20,9 +20,11 @@ public class LoadingScript : MonoBehaviour
         PoolMgr.GetInstance().Clear();
         if (loadingSlider != null)
        a.allowSceneActivation = false;
+        Debug.Log("加载场景进度条OnEnable()控制脚本测试");
     }
     public void Update()
     {
+        Debug.Log("加载场景进度条Update()控制脚本测试");
         if (loadingSlider != null)
         {
             loadingSlider.realValue = a.progress;//同步加载进度
