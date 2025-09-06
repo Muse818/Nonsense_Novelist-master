@@ -277,6 +277,7 @@ public class GameProcessSlider : MonoBehaviour
     //希望-访客-意外-危机-交易-场景
     public void CreateWeijiEvent(bool isKey,int monster)
     {
+        Debug.Log("一次危机-gc");
         //创建固定危机事件
         PoolMgr.GetInstance().GetObj(eventBubblePrefab[3], (a) =>
         {
@@ -291,6 +292,7 @@ public class GameProcessSlider : MonoBehaviour
 
     public void CreateFangke(bool isKey, int chara)
     {
+        Debug.Log("一位访客-gc");
         //创建固定危机事件
         PoolMgr.GetInstance().GetObj(eventBubblePrefab[1], (a) =>
         {
@@ -303,6 +305,7 @@ public class GameProcessSlider : MonoBehaviour
     }
     public void CreateXiWang(bool isKey)
     {
+        Debug.Log("一个希望-gc");
         //创建固定危机事件
         PoolMgr.GetInstance().GetObj(eventBubblePrefab[0], (a) =>
         {
@@ -324,7 +327,8 @@ public class GameProcessSlider : MonoBehaviour
         obj.transform.localScale = Vector3.one;
     }
     public void CreateJiaoYi(bool isKey)
-    { 
+    {
+        Debug.Log("一场交易-gc");
         //创建固定危机事件
         PoolMgr.GetInstance().GetObj(eventBubblePrefab[4], (a) =>
         {
@@ -349,6 +353,7 @@ public class GameProcessSlider : MonoBehaviour
     }
     public void CreateYiwai(bool isKey)
     {
+        Debug.Log("一个意外-gc");
         //创建固定危机事件
         PoolMgr.GetInstance().GetObj(eventBubblePrefab[2], (a) =>
         {
