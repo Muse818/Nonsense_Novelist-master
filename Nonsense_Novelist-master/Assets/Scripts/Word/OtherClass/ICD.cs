@@ -11,5 +11,5 @@ public interface ICD
     /// 冷却（外部使用此方法时，将cd重置为0）
     /// </summary>
     /// <returns>是否冷却完毕</returns>
-    abstract public bool CalculateCD();
+    bool CalculateCD();
 }
